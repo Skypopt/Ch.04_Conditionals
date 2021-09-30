@@ -29,7 +29,7 @@ elif number == 0:
     print("Test 2: number is 0")
 else:
     print("Test 2: number is negative")
-if number > -100 and number < 100:
+if number >= -100 and number <= 100:
     print("Test 3: Inclusive")
 else:
     print("Test 3: Exclusive")

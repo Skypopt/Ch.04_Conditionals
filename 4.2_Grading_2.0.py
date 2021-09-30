@@ -7,17 +7,17 @@ If they fail, tell them to "Transfer to Johnston!"
 semgrade=float(input("what is the semester grade? "))
 finalexam=float(input("what is the final exam grade? "))
 examworth=float(input("what is the exam worth? "))
-leftoverweight=1-examworth
-overall= (semgrade*leftoverweight)+(finalexam*examworth)
+leftoverweight=100-examworth
+overall= ((semgrade*leftoverweight)+(finalexam*examworth))/100
 print(overall)
-if overall >= 0.90:
+if overall >= 90:
     print("Final Grade: -A / A")
-if overall >= 0.80 and overall < 0.90:
+elif overall >= 80:
     print("Final Grade: -B / B / B+")
-if overall >= 0.70 and overall <0.80:
+elif overall >= 70:
     print("Final Grade: -C / C / C+")
-if overall >=0.60 and overall <0.70:
+elif overall >=60:
     print("Final Grade: -D / D / D+")
-if overall <0.60:
+else:
     print("Final Grade: F")
     print("Transfer to Johnston!")

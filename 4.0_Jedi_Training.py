@@ -3,9 +3,9 @@
   #1. Make the following program work. (3 mistakes)
      
 midichlorians = float(input("Enter midichlorian count: "))
-if midichlorians > 10000:
+if midichlorians >= 10000:
     print("You have serious Jedi potential")
-elif midichlorians < 10000 :
+else:
     print("Jedi, you will never be.")
 
 
@@ -28,7 +28,7 @@ else:
   # 4. Make the following program work. (4 mistakes)
      
 jedi = str(input("Name one of the top 3 greatest Jedi: "))
-if jedi == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
+if jedi == "Yoda" or jedi=="Luke Skywalker" or jedi=="Obi-Wan Kenobi":
     print ("That is correct!")
 
 
@@ -44,13 +44,13 @@ if jedi == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
 
 user_input = input("Choose a character?")
 
-if user_input == "A":
+if user_input.lower() == "a" or user_input.lower()=="jedi master":
          sensitivity = 1000
 elif user_input == "B":
          sensitivity = 900
 elif user_input == "C":
          sensitivity = 0
-elif user_input != "A" or "B" or "C":
+else:
     print("Not a choice!")
     sensitivity = ""
 

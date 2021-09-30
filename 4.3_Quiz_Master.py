@@ -5,6 +5,7 @@ The criteria for the project are on the website. Make sure you test this quiz wi
 two of your student colleagues before you run it by your instructor.
 '''
 score=0
+lettergrade=0
 #Question 1!!!
 a = float(input("Question 1: What is 29+420?"))
 if a==449:
@@ -14,16 +15,16 @@ else:
     print("That is incorrect, the answer is 449, next question :(")
 #Question 2!!!
 b = str(input("Question 2: What is the name of the first star wars movie released"))
-Correct=["A new hope", "A New Hope", "a new hope", "A NEW HOPE"]
-if b in Correct:
+correct=["A new hope", "A New Hope", "a new hope", "A NEW HOPE"]
+if b in correct:
     print("That is correct!")
     score = score + 1
 else:
     print("That isn't correct, the answer is A new hope! Next question")
 #Question 3!!!
 c = str(input("Question 3: Multiple choice, chose the right answer, what is 2+17. A:19, B:29, or C:12"))
-Correct2=["A", "a"]
-if c in Correct2:
+correct2=["A", "a"]
+if c in correct2:
     print("That is correct!")
     score = score + 1
 else:
@@ -37,8 +38,8 @@ else:
     print("Incorrect, the answer is 8, next question")
 #Question 5
 e = str(input("Question 5: What is the main character of demon slayer?"))
-Correct3 = ["Tanjiro", "tanjiro", "Tanjiro Kamado", "tanjiro Kamado", "tanjiro kamado", "Tanjiro kamado"]
-if e in Correct3:
+correct3 = ["Tanjiro", "tanjiro", "Tanjiro Kamado", "tanjiro Kamado", "tanjiro kamado", "Tanjiro kamado"]
+if e in correct3:
     print("That is correct, next question")
     score = score + 1
 else:
@@ -57,8 +58,28 @@ if g == 32:
     score = score + 1
 else:
     print("That is not correct, the answer is 32, next question")
+print("")
 print("YOUR SCORE ISSSSSSSS")
 print(score)
 print("OUT OF 7 POINTS")
-if score<7:
+print(score//0.07,"%")
+print("")
+if score==7:
+    print("Grade: A+")
+if score==6:
+    print("Grade: B")
+if score==5:
+    print("Grade: C-")
+if score==4:
+    print("Grade: F")
+if score==3:
+    print("Grade: F")
+if score==2:
+    print("Grade: F")
+if score==1:
+    print("Grade: F")
+if score==0:
+    print("Grade: F")
+if score<5:
+    print("")
     print("LOL YOU SUCKKKKK")
